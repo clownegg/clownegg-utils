@@ -28,6 +28,6 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "@clownegg/utils": "./clownegg-utils-v0.0.1.tgz"
+    "@clownegg/utils": "^0.0.2"
   }
 }

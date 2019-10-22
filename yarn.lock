@@ -18,9 +18,16 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@clownegg/utils@./clownegg-utils-1.0.0.tgz":
-  version "1.0.0"
-  resolved "./clownegg-utils-1.0.0.tgz#147c603f5b07dcd7c4eec521bfabccf2e6f16a6e"
+"@clownegg/utils@./clownegg-utils-v0.0.1.tgz":
+  version "0.0.1"
+  resolved "./clownegg-utils-v0.0.1.tgz#a07b22cfb299e4dd40f092ab2620362a1714886d"
+
+"@clownegg/utils@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@clownegg/utils/-/utils-0.0.2.tgz#c4cb8bfc1cdc546cb6c921a361688cf444068eb8"
+  integrity sha512-K0aI0Y6NBukBbfIKKYSW5zR2l4JP0iBKAaW/U44g8rR77xG3EqpocTv8jms3rbVBYiYZv1bkKhqYcZzO8ea0JA==
+  dependencies:
+    "@clownegg/utils" "./clownegg-utils-v0.0.1.tgz"
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
