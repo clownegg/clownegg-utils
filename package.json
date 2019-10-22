@@ -1,11 +1,16 @@
 {
   "name": "@clownegg/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "nodemon",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^12.11.2",
@@ -23,6 +28,6 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "@clownegg/utils": "./clownegg-utils-1.0.0.tgz"
+    "@clownegg/utils": "./clownegg-utils-v0.0.1.tgz"
   }
 }
