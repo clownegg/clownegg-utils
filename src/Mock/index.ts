@@ -1,4 +1,7 @@
-import {lastName as _lastName} from './LastName';
+import {v4} from 'uuid';
+
+import {prefectures} from './Prefecture';
+import {lastNames} from './LastName';
 
 const _min = 1;
 const _max = 10;
@@ -8,9 +11,14 @@ const rnd = (max: number = _max) => {
   return r;
 };
 
+/** uuidを返す */
+export const uuid = () => {
+  return v4();
+};
+
 /** 名字を返す  */
 export const lastName = () => {
-  const n = _lastName.map((ln) => ln.name);
+  const n = lastNames.map((ln) => ln.name);
   const r = rnd(n.length);
 
   return r > n.length ? n[1] : n[r];
@@ -22,4 +30,12 @@ export const BloodType = () => {
   const r = rnd(types.length);
 
   return r > types.length ? types[1] : types[r];
+};
+
+/** 都道府県を返す */
+export const prefecture = () => {
+  const p = prefectures.map((_) => _.name);
+  const r = rnd(p.length);
+
+  return r > p.length ? p[1] : p[r];
 };
